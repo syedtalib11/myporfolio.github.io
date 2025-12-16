@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Linux System Administrator | Professional Portfolio</title>
+  <style>
+    :root {
+      --bg: #0b1120;
+      --card: #111827;
+      --primary: #38bdf8;
+      --text: #e5e7eb;
+      --muted: #9ca3af;
+    }
+
+    * { margin: 0; padding: 0; box-sizing: border-box; font-family: "Segoe UI", Arial, sans-serif; }
+    body { background: linear-gradient(135deg, #020617, #0b1120); color: var(--text); }
+
+    .container { width: 90%; max-width: 1100px; margin: auto; }
+
+    header {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+    }
+
+    nav {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      background: rgba(2,6,23,0.7);
+      backdrop-filter: blur(8px);
+      z-index: 1000;
+    }
+
+    nav .container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px 0;
+    }
+
+    nav a {
+      color: var(--text);
+      text-decoration: none;
+      margin-left: 20px;
+      font-size: 14px;
+    }
+
+    nav a:hover { color: var(--primary); }
+
+    .hero {
+      text-align: left;
+    }
+
+    .hero h1 {
+      font-size: 48px;
+      margin-bottom: 15px;
+    }
+
+    .hero h1 span { color: var(--primary); }
+
+    .hero p {
+      font-size: 18px;
+      color: var(--muted);
+      max-width: 600px;
+      margin-bottom: 30px;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 12px 30px;
+      border-radius: 30px;
+      background: var(--primary);
+      color: #020617;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    section { padding: 100px 0; }
+
+    section h2 {
+      font-size: 32px;
+      margin-bottom: 40px;
+      text-align: center;
+    }
+
+    .about {
+      max-width: 800px;
+      margin: auto;
+      text-align: center;
+      color: var(--muted);
+      font-size: 17px;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 25px;
+    }
+
+    .card {
+      background: linear-gradient(180deg, #020617, #111827);
+      border-radius: 16px;
+      padding: 30px;
+      border: 1px solid rgba(255,255,255,0.05);
+    }
+
+    .card h3 { margin-bottom: 10px; color: var(--primary); }
+    .card p { color: var(--muted); font-size: 15px; }
+
+    .contact {
+      text-align: center;
+    }
+
+    .contact p { color: var(--muted); margin-bottom: 10px; }
+
+    footer {
+      text-align: center;
+      padding: 30px 0;
+      font-size: 14px;
+      color: var(--muted);
+      border-top: 1px solid rgba(255,255,255,0.05);
+    }
+
+    @media (max-width: 600px) {
+      .hero h1 { font-size: 34px; }
+      section { padding: 70px 0; }
+    }
+  
+    html { scroll-behavior: smooth; }
+
+    .profile {
+      display: flex;
+      align-items: center;
+      gap: 60px;
+    }
+
+    .profile img {
+      width: 300px;
+      height: 300px;
+      object-fit: cover;
+      border-radius: 50%;
+      border: 4px solid var(--primary);
+      box-shadow: 0 15px 45px rgba(0,0,0,0.6);
+      animation: float 4s ease-in-out infinite;
+    }
+
+    @keyframes float {
+      0%,100% { transform: translateY(0); }
+      50% { transform: translateY(-12px); }
+    }
+
+    .profile img {
+      width: 280px;
+      height: 280px;
+      object-fit: cover;
+      border-radius: 20px;
+      border: 3px solid var(--primary);
+      box-shadow: 0 10px 40px rgba(0,0,0,0.6);
+    }
+
+    .slider {
+      position: relative;
+      overflow: hidden;
+    }
+
+    .slides {
+      display: flex;
+      transition: transform 0.8s ease-in-out;
+    }
+
+    .slide {
+      min-width: 100%;
+    }
+
+    @media (max-width: 800px) {
+      .profile { flex-direction: column; text-align: center; }
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <div class="container">
+      <strong>My Portfolio</strong>
+      <div>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#services">Services</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </div>
+  </nav>
+
+  <header>
+    <div class="container hero">
+      <div class="profile">
+        <div>
+          <h1>Linux <span>System Administrator</span></h1>
+          <p>
+            Hi, My Name is Syed Talib Hassan and i am RHCSA Certified professional with 4+ years of experience in Linux administration,
+            IT support, automation, and server management. Based in Doha, Qatar.
+          </p>
+          <a href="#contact" class="btn">Hire Me</a>
+        </div>
+        <div class="">
+          <div class="" id="">
+            <div class=""><img src="IMG-20250829-WA0001.jpg" alt="Profile Photo"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <section id="about">
+    <div class="container">
+      <h2>About Me</h2>
+      <p class="about">
+        I am a passionate and reliable Linux System Administrator with over 4+ years of
+        hands-on experience managing enterprise Linux environments. I hold RHCSA certification
+        and have strong expertise in server administration, troubleshooting, automation, and
+        infrastructure support.
+        <br><br>
+        I have worked extensively with RHEL, CentOS, and Ubuntu systems, handling user
+        management, permissions, services, monitoring, and system security. I am comfortable
+        working in production environments and supporting both technical teams and end users.
+        <br><br>
+        Currently based in Doha, Qatar, I am available for immediate joining and open to roles
+        such as Linux Administrator, System Administrator, and IT Support Engineer.
+      </p>
+    </div>
+  </section>
+
+  <section id="skills">
+    <div class="container">
+      <h2>Skills</h2>
+      <div class="grid">
+        <div class="card"><h3>Linux Administration</h3><p>RHEL, CentOS, Ubuntu, Users, Permissions, LVM</p></div>
+        <div class="card"><h3>Directory Services</h3><p>Active Directory Integration, Samba, LDAP Basics</p></div>
+        <div class="card"><h3>Servers & Networking</h3><p>Apache, Nginx, SSH, Networking, FTP, Samba</p></div>
+        <div class="card"><h3>Scripting & Tools</h3><p>Bash Scripting, AWK, Cron Jobs, yum, dnf, rpm, GitHub</p></div>
+        <div class="card"><h3>Email & Security</h3><p>Postfix, Firewall, SELinux Basics</p></div>
+        <div class="card"><h3>Web server authencation</h3><p>smtp, ftp, sftp, ntp, dhcp, dns, rsync, tar</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="services">
+    <div class="container">
+      <h2>Services</h2>
+      <div class="grid">
+        <div class="card"><h3>System Administration</h3><p>Server installation, configuration & monitoring</p></div>
+        <div class="card"><h3>IT Support</h3><p>Technical troubleshooting & end-user support</p></div>
+        <div class="card"><h3>Automation</h3><p>Custom scripts to reduce manual workload</p></div>
+        <div class="card"><h3>Authentication or privacy</h3><p>active server and secure from malware attack</p></div>
+        <div class="card"><h3>server patching</h3><p>ym,dnf,rpm</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="container contact">
+      <h2>Contact</h2>
+      <p>Email: syedtalib98634@gmail.com</p>
+      <p>Phone / WhatsApp: +974-7707 4153</p>
+      <p>Location: Doha, Qatar</p>
+      <p>
+        GitHub: <a href="https://github.com/syedtalib11" target="_blank" style="color:var(--primary)">github.com/yourusername</a><br>
+        LinkedIn: <a href="https://www.linkedin.com/in/syed-talib-hassan-229805258/" target="_blank" style="color:var(--primary)">linkedin.com/in/yourprofile</a>
+      </p>
+    </div>
+  </section>
+
+  <footer>
+    © 2025 Linux System Administrator Portfolio
+  </footer>
+</body>
+</html>
